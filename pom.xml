@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.adwmainz.da.extensions.importmore</groupId>
+  <artifactId>importMoreXtension</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ImportMoreXtension</name>
+  <description>This Project provides additional XML fragment import related author operations for the Oxygen XML Editor</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.oxygenxml</groupId>
+  		<artifactId>oxygen</artifactId>
+  		<version>19.1.0.4</version>
+  	</dependency>
+  	<dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.0</version>
+  	</dependency>
+  </dependencies>
+</project>
