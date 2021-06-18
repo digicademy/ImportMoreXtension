@@ -52,14 +52,14 @@ public class ImportMoreArgumentProvider {
 				ArgumentDescriptor.TYPE_XPATH_EXPRESSION, 
 				"The XPath expression relative to the result(s) of the param '" + ARGUMENT_REQUESTED_ELEMENT_LOCATION + "' that define an external element as"
 						+ " equal to a local one.\n"
-						+ "Please note that all expressions will be wrapped with the 'normalize-space' function!");
+						+ "Please note that all expressions will be wrapped with the 'normalize-space' function!",
+				".");
 	}
 	
 	public static ArgumentDescriptor getFragmentWithImportExpressionsArgumentDescriptor() {
 		return new ArgumentDescriptor(
 				AskMoreArgumentProvider.ARGUMENT_FRAGMENT, 
 				ArgumentDescriptor.TYPE_STRING, 
-				//"The fragment to be inserted (use $$IMPORT1$$ to specify the location of the first imported element, $$IMPORT2$$ for the second [if present], ...).");
 				"The fragment to be inserted." + ImportMoreAnnotationParser.getDescription());
 	}
 	
@@ -141,7 +141,8 @@ public class ImportMoreArgumentProvider {
 				ArgumentDescriptor.TYPE_XPATH_EXPRESSION, 
 				"The XPath expression relative to the result(s) of the param '" +ARGUMENT_REQUESTED_ELEMENT_LOCATION + "' that should be used to create the "
 						+ "selectable options\n"
-						+ "Please note that this expression must not return empty nodes! You may use the expression (possiblyEmptyExpression, nonEmptyDefaultExpression)[1] to avoid this.");
+						+ "Please note that this expression must not return empty nodes! You may use the expression (possiblyEmptyExpression, nonEmptyDefaultExpression)[1] to avoid this.",
+						".");
 	}
 	
 	public static ArgumentDescriptor getSystemIdArgumentDescriptor() {
