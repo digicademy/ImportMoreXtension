@@ -1,7 +1,7 @@
 # ImportMoreXtension
 Adds custom operations with a focus on more interaction with external XML docs to the Oxygen XML Editor
 
-This software package provides six Java operations developed at the Digital Academy of the Academy of Sciences and Literature | Mainz that may be used to create custom actions within the Oxygen XML Editor that simplify importing XML fragments from resources other than the one to be edited. A documentation of all operations can be found in the [wiki of this repository](https://github.com/digicademy/ImportMoreXtension/wiki).
+This software package provides seven Java operations developed at the Digital Academy of the Academy of Sciences and Literature | Mainz that may be used to create custom actions within the Oxygen XML Editor that simplify importing XML fragments from resources other than the one to be edited. A documentation of all operations can be found in the [wiki of this repository](https://github.com/digicademy/ImportMoreXtension/wiki).
 
 
 # Requirements

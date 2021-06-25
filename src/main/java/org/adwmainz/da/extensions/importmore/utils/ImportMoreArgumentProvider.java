@@ -17,14 +17,20 @@ import ro.sync.ecss.extensions.api.AuthorConstants;
 public class ImportMoreArgumentProvider {
 
 	// constant list of all argument names used within this ImportMoreXtension
+	public static final String ARGUMENT_ATTR_NAME = "name";
+	public static final String ARGUMENT_ATTR_NAMESPACE = "namespace";
+	public static final String ARGUMENT_ATTR_VALUE = "value";
+	public static final String ARGUMENT_ATTR_VALUE_EXPRESSION = "valueExpression";
 	public static final String ARGUMENT_CONFIRM_ACTION_MESSAGE = "confirmActionMessage";
 	public static final String ARGUMENT_DISPLAY_PERCENTAGES = "displayPercentages";
+	public static final String ARGUMENT_EDIT_ATTR = "editAttribute";
 	public static final String ARGUMENT_EQUAL_ELEMENT_EXPRESSION = "equalElementExpression";
 	public static final String ARGUMENT_LOCAL_ELEMENT_LOCATION = "localElementLocation";
 	public static final String ARGUMENT_LOCAL_IDENTIFIER_LOCATION = "localIdentifierLocation";
 	public static final String ARGUMENT_NAMESPACE_PREFIXES = "namespacePrefixes";
 	public static final String ARGUMENT_NAMESPACE_URIS = "namespaceUris";
 	public static final String ARGUMENT_PRECISION = "presicion";
+	public static final String ARGUMENT_REMOVE_IF_EMPTY = "removeIfEmpty";
 	public static final String ARGUMENT_RESOURCE_LOCATION = "resourceLocation";
 	public static final String ARGUMENT_REQUESTED_ELEMENT_LOCATION = "requestedElementLocation";
 	public static final String ARGUMENT_REQUESTED_IDENTIFIER_LOCATION = "requestedIdentifierLocation";
@@ -34,7 +40,17 @@ public class ImportMoreArgumentProvider {
 
 	
 	
-	// basic ArgumentDescriptor getter methods	
+	// basic ArgumentDescriptor getter methods
+	public static ArgumentDescriptor getAttributeValueExpressionArgumentDescriptor() {
+		return new ArgumentDescriptor(
+				ARGUMENT_ATTR_VALUE_EXPRESSION, 
+				ArgumentDescriptor.TYPE_XPATH_EXPRESSION, 
+				"The XPath expression relative to the result(s) of the param '" +ARGUMENT_REQUESTED_ELEMENT_LOCATION + "' that should be used to create the "
+						+ "new value for the attribute.\n"
+						+ "Please note that this expression must not return empty strings! You may use the expression (possiblyEmptyExpression, nonEmptyDefaultExpression)[1] to avoid this.",
+				".");
+	}
+	
 	public static ArgumentDescriptor getDisplayPercentagesArgumentDescriptor() {
 		return new ArgumentDescriptor(
 				ARGUMENT_DISPLAY_PERCENTAGES, 

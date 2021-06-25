@@ -99,7 +99,7 @@ public class XMLImportService {
 	
 	/**
 	 * Fetches a List of nodes with keys from the given resource while displaying a loading dialog
-	 * @param resourcePath the path to a resource
+	 * @param resourceName the path to a resource
 	 * @param xPathExpression an XPath expression
 	 * @param keyExpression an XPath expression identifying the Map key using its value as context node
 	 * @param namespaceMap a Map of namespace prefixes and their respective namespace URIs
