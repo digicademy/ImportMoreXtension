@@ -5,7 +5,7 @@ This software package provides seven Java operations developed at the Digital Ac
 
 
 # Requirements
-The ImportMoreXtension was developed and tested to be used with the versions 19.1 to 23.1 of the [Oxygen XML Editor](https://www.oxygenxml.com/) and depends on the the Saxon version included (saxon9ee.jar).
+The ImportMoreXtension was developed and tested to be used with the versions 19.1 to 27.1 of the [Oxygen XML Editor](https://www.oxygenxml.com/) and depends on the the Saxon version included.
 
 Since it extends functionality of the [AskMoreXtension](https://github.com/digicademy/AskMoreXtension) you will also need to add a released JAR with a version greater than or equal to 1.3.0.
 
@@ -15,7 +15,7 @@ If you plan on using the DisplayImportChartOperation you will also need to add J
 # Download and Installation
 All releases can be downloaded as a .jar file from the [release page of this repository](https://github.com/digicademy/ImportMoreXtension/releases).
 
-You can include the package into your own Oxygen framework by adding the necessary JARs (AskMoreXtension, (JFreeChart,) ImportMoreXtension) to the classpath. Please find notes on how to do this in the [official documentation of the ClassPath Tab](https://www.oxygenxml.com/doc/versions/19.1/ug-editor/topics/document-type-classpath-tab.html).
+You can include the package into your own Oxygen framework by adding the necessary JARs (AskMoreXtension, (JFreeChart,) ImportMoreXtension) to the classpath. Please find notes on how to do this in the [official documentation of the ClassPath Tab](https://www.oxygenxml.com/doc/versions/27.1/ug-editor/topics/document-type-classpath-tab.html).
 
 
 # License
